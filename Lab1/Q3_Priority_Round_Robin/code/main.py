@@ -1,3 +1,9 @@
+p = [
+    {"pid": "P1", "arrival": 0, "burst": 7, "priority": 2},
+    {"pid": "P2", "arrival": 2, "burst": 4, "priority": 1},
+    {"pid": "P3", "arrival": 4, "burst": 1, "priority": 3},
+    {"pid": "P4", "arrival": 5, "burst": 4, "priority": 2},
+]
 def priority_scheduling(processes):
     current_time = 0
     completed = []
@@ -20,10 +26,4 @@ def priority_scheduling(processes):
 
     return result
 
-
-print(priority_scheduling([
-    {"pid": "P1", "arrival": 0, "burst": 7, "priority": 2},
-    {"pid": "P2", "arrival": 2, "burst": 4, "priority": 1},
-    {"pid": "P3", "arrival": 4, "burst": 1, "priority": 3},
-    {"pid": "P4", "arrival": 5, "burst": 4, "priority": 2},
-]))
+print(priority_scheduling(p))
